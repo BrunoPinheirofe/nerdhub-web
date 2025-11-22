@@ -13,7 +13,9 @@ class NewsController extends Controller
      */
     public function index()
     {
-        //
+
+        $news = News::latest()->paginate(10);
+        return view("news", compact('news'));
     }
 
     /**
@@ -37,7 +39,7 @@ class NewsController extends Controller
      */
     public function show(News $news)
     {
-        //
+        return view('news-show', compact('news'));
     }
 
     /**

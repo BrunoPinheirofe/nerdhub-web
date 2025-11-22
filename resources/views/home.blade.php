@@ -69,7 +69,7 @@
                         <img src="https://source.unsplash.com/800x450/?breaking-news" alt="Notícia Principal"
                             class="w-full md:w-1/2 h-128 md:h-auto object-cover" />
                         <div class="p-6 flex flex-col justify-center md:w-1/2">
-                            <h3 class="text-3xl font-extrabold mb-4">Notícia Principal: Título Impactante</h3>
+                            <h3 class="text-3xl font-extrabold mb-4">{{ var_dump(news) }}</h3>
                             <p class="text-gray-700 mb-6">
                                 Um resumo mais detalhado da notícia principal para atrair a atenção do leitor e destacar
                                 o conteúdo mais importante.:
