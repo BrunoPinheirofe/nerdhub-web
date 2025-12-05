@@ -12,7 +12,7 @@ class HomeController extends Controller
     {
         $data = [];
         $news = News::limit(4)->get();
-        $data["news"] = $news;
-        return view("home", );
+        
+        return view("home", compact("news"));
     }
 }
